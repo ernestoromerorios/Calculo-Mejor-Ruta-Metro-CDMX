@@ -27,7 +27,4 @@ El sistema calcula el camino más corto usando el algoritmo de Dijkstra y muestr
 
 ## 📂 Estructura del proyecto
 
-. ├── index.html # Página principal 
-. ├── styles.css # Estilos (colores de cada línea) 
-. ├── dijkstra.js # Algoritmo y arreglos de estaciones por línea 
-. └── formulario.js # Lógica de formulario y renderizado de rutas
+. ├── index.html # Página principal ├── styles.css # Estilos (colores de cada línea) ├── dijkstra.js # Algoritmo y arreglos de estaciones por línea └── formulario.js # Lógica de formulario y renderizado de rutas

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ruta Metro CDMX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+    <div class="metro-logo">
+        <span class="m">m</span>
+    </div>
+    <h1>Ruta Metro CDMX</h1>
+    </div>
+    <p>Escribe tu estación y selecciona de las sugerencias.</p>
+
+    <form id="form" autocomplete="off">
+      <div class="field">
+        <label for="origen">Estación de origen</label>
+        <input id="origen" type="text" placeholder="Ej. Coyoacan" required>
+        <ul id="sug-origen" class="suggestions"></ul>
+      </div>
+
+      <div class="field">
+        <label for="destino">Estación destino</label>
+        <input id="destino" type="text" placeholder="Ej. Balbuena" required>
+        <ul id="sug-destino" class="suggestions"></ul>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="primary">Calcular ruta</button>
+        <button type="button" id="limpiar">Limpiar</button>
+      </div>
+    </form>
+
+    <div id="msg" class="msg" hidden></div>
+    <div id="route" class="route" hidden></div>
+  </div>
+
+  <script src="dijkstra.js"></script>
+  <script src="formulario.js"></script>
+  
+</body>
+</html>
